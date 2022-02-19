@@ -1,11 +1,11 @@
 public class Character implements MapObject {
-    private MapPoint postion;
+    private MapPoint postionRTC;
     private MapObjectTypes type = MapObjectTypes.MAINCHAR;
-    public void setPosition(MapPoint p) {
-        postion = p;
+    public void setPositionRTC(MapPoint p) {
+        postionRTC = p;
     }
-    public MapPoint getPosition() {
-        return postion;
+    public MapPoint getPositionRTC() {
+        return postionRTC;
     }
     public MapObjectTypes getType() {
         return type;

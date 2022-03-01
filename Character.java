@@ -1,13 +1,8 @@
-public class Character implements MapObject {
-    private MapPoint postionRTC;
+public class Character extends MapObject {
+    private MapPoint absolutePosition = new MapPoint(500,500);
     private MapObjectTypes type = MapObjectTypes.MAINCHAR;
-    public void setPositionRTC(MapPoint p) {
-        postionRTC = p;
+    Character(){
+        super(new MapPoint(50,50), MapObjectTypes.MAINCHAR);
     }
-    public MapPoint getPositionRTC() {
-        return postionRTC;
-    }
-    public MapObjectTypes getType() {
-        return type;
-    }
+
 }
